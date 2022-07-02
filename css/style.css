@@ -32,8 +32,15 @@ th {
   color: white;
 }
 
-.red {
-  background-color: rgb(255, 0, 0);
+.msg {
+  background-color: rgb(197, 135, 135);
+  width: 5rem;
+  height: 3rem;
+  margin: 1px 2px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 1rem 0;
+
 } 
 
 /******************************************

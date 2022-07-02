@@ -45,6 +45,7 @@
 let slide = document.getElementById('slider').value;
 let sliderVal = document.getElementById('sliderVal');
 let d = document.getElementById('collection');
+let msg = document.getElementById('msg');
 
 
 //draw table for the fist time
@@ -91,6 +92,9 @@ function drawTable(size) {
             else {
                 td = document.createElement('td');
                 td.id = "cell";
+                td.addEventListener('click', function(e){
+                    msg.innerHTML = `${e.target.innerHTML}`;
+                })
                 tdText = document.createTextNode(`${i*j}`);
             }
             
