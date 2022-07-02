@@ -1,0 +1,47 @@
+/******************************************
+/* CSS
+/*******************************************/
+html {
+  font-size: 62.5%;
+  background-color: rgb(230, 230, 230);
+}
+
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+td, th {
+  height: 3rem;
+  width: 5rem;
+  border: 1px solid rgb(82, 82, 82);
+  text-align: center;
+  opacity: 0.6;
+}
+
+th:hover, td:hover {
+  opacity: 1;
+  font-weight: bolder;
+}
+
+th {
+  background-color: rgb(143, 142, 142);
+  color: white;
+}
+
+.red {
+  background-color: rgb(255, 0, 0);
+} 
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
