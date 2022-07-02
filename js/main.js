@@ -90,6 +90,7 @@ function drawTable(size) {
             }
             else {
                 td = document.createElement('td');
+                td.id = "cell";
                 tdText = document.createTextNode(`${i*j}`);
             }
             
