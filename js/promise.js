@@ -11,13 +11,14 @@ let p = new Promise((resolve, reject) => {
       // we can pass anything we want in
       //this is being passed from the .then & .catch functions
       //SO the parabeters have to match 
-      resolve('resolved') 
+      //the .then function is the one that is called when the promise is resolved
+      resolve("hello") 
     } 
     else 
     {
       //reject
       //same as resolve rules but run when the promise fails
-      reject('rejected') // same, pass what ever
+      reject("Bye") // same, pass what ever
     }
   })
   
@@ -33,9 +34,9 @@ let p = new Promise((resolve, reject) => {
           //reject method for .catch
   p.then((param) => {
     //code here is run when successful
-    console.log(param)
+    console.log(param + " " + p)
   }).catch((param) => {
     //code here is run when unsuccessful
-    console.log(param)
+    console.log(param + " " + p)
   })
   
